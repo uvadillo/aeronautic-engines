@@ -6,5 +6,6 @@
 Tambien se podian añadir trabajadores mediante Usuario y contraseña, puedes iniciar sesion con el usuario creado y borrar tu usuario, pero no puedes borrar el del administrador.
 </p>
 <i>La creacion del logo tambien fue nuestra, desarrollamos la idea y la llevamos a cabo teniendo diferentes tamaños y formatos para nuestra web.</i>
-Tambien hay que destacar que al ser el primer proyecto no hicimos uso de la base de datos, lo guardabamos en el LocalStorage mediante JavaScript.
+
+<p>Tambien hay que destacar que al ser el primer proyecto no hicimos uso de la base de datos, lo guardabamos en el LocalStorage mediante JavaScript.</p>
 
