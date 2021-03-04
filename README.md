@@ -2,12 +2,11 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/uvadillo/aeronautic-engines/main/media/logoCompleto.png">
 </p>
-<p>Este es el primer proyecto que realizamos en un grupo de 3, en el cual nos pedian una aplicacion web donde se pueden añadir y borrar avisos, en ellos se puede ver la descripción si asi lo desea el tecnico.
-Tambien se podian añadir trabajadores mediante Usuario y contraseña, puedes iniciar sesion con el usuario creado y borrar tu usuario, pero no puedes borrar el del administrador.
-</p>
-<p><i>La creacion del logo tambien fue nuestra, desarrollamos la idea y la llevamos a cabo teniendo diferentes tamaños y formatos para nuestra web.</i></p>
 
-<p>Tambien hay que destacar que al ser el primer proyecto no hicimos uso de la base de datos, lo guardabamos en el LocalStorage mediante JavaScript.</p>
+<p><i>La creacion del logo fue nuestra, desarrollamos la idea y la llevamos a cabo teniendo diferentes tamaños y formatos para nuestra web.</i></p>
+
+<p>Realizamos una pagina de Wordpress instalandolo en un servidor local.
+  Tambien hay que destacar la aplicacion web es totalmente responsiva y que al ser el primer proyecto no hicimos uso de la base de datos, lo guardabamos en el LocalStorage mediante JavaScript.</p>
 
 # Enunciado del Reto 1
 Somos una empresa de reciente creación dedicada a la prestación de todo tipo de
@@ -34,3 +33,8 @@ Las imágenes y textos de la página corporativa serán de ejemplo (es posible u
 texto Lorem Ipsum), pero tienen que simular un contenido real ya que será la primera versión
 que entreguemos a la empresa para su aprobación.
 
+## Construido con 🛠️
+
+* [Visual Studio Code](https://code.visualstudio.com/) - La interfaz gráfica utilizada
+* [Wordpress](https://wordpress.com/es/) - Web principal
+* [File-zilla](https://filezilla-project.org/) - Para el servidor FTP
