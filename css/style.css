@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto';
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  background-color: #aad4ff;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 60px;
+  background: #304d6d;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img.logo {
+  font-size: 35px;
+  width: 10%;
+  max-width: 50px;
+}
+
+#menu #menuList {
+  float: right;
+  margin-right: 20px;
+}
+
+#menu #menuList li {
+  line-height: 80px;
+  display: inline-block;
+}
+
+#menu #menuList li a {
+  color: white;
+  border-radius: 2px;
+}
+
+li.active {
+  background-color: #6ab3ff;
+}
+
+.checkbtn {
+  font-size: 30px;
+  display: none;
+  float: right;
+  cursor: pointer;
+  color: white;
+}
+
+#uName {
+  font-size: 1.1em;
+  color: white;
+}
+
+#check {
+  display: none;
+}
+
+.btnEliminarEve {
+  margin-right: 4%;
+}
+
+
+/*FOOTER*/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin-top: auto;
+  background-color: #304d6d;
+  justify-content: center;
+}
+
+footer ul li {
+  display: inline-block;
+  padding-top: 17px;
+}
+
+.title {
+  font-size: 1.3em;
+  width: 100%;
+  height: 45px;
+  padding: 9px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  border-radius: 5px 5px 0 0;
+  background-color: #4ea5ff;
+}
+
+textarea {
+  font-family: 'Roboto';
+  font-weight: 300;
+  resize: none;
+}
+
+
+/*Colores*/
+
+#menuList {
+  background-color: #3497ff;
+}
+
+#eventInfo {
+  border: 1px solid black;
+  background-color: #d3e8ff;
+}
+
+#eventHistory {
+  background-color: #4ea5ff;
+}
+
+.event {
+  border-bottom: 1px solid gray;
+  background-color: #90c6ff;
+}
+
+#addEvent,
+#addUser {
+  border: 1px solid black;
+  background-color: #d3e8ff;
+}
+
+
+/*Estilos inputs*/
+
+#addEventName,
+#datePicker,
+#addEventDescription,
+#nm,
+#pw {
+  border: none;
+  border-bottom: 1px gray solid;
+  background: none;
+}
+
+#addEventDescription {
+  border-bottom: 1px gray solid;
+}
+
+#addEventName:focus,
+#datePicker:focus,
+#addEventDescription:focus,
+#nm:focus,
+#pw:focus {
+  transition: .1s;
+  border-bottom: 2px #4ea5ff solid;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  article {
+    height: 80vh;
+  }
+
+  /*MENU*/
+  .checkbtn {
+    display: block;
+  }
+
+  footer {
+    display: none;
+  }
+
+  #menuList {
+    position: fixed;
+    z-index: 10;
+    top: 60px;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    transition: all .3s;
+    text-align: center;
+  }
+
+  #menu #menuList li {
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .close {
+    display: none;
+  }
+
+  #menu #menuList li a {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+  #check:checked~#menuList {
+    left: 0;
+  }
+
+  #check:checked~.close {
+    display: inline;
+  }
+
+  #check:checked~.open {
+    display: none;
+  }
+
+  footer ul li {
+    text-align: center;
+  }
+
+  #eventInfo {
+    overflow: auto;
+    width: 90%;
+    height: 80vw;
+    min-height: 135px;
+    margin-top: 5%;
+    border-radius: 5px;
+  }
+
+  #eventHistory {
+    /* justify-content: space-around; */
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid gray;
+    border-radius: 5px 5px 0 0;
+    align-items: center;
+  }
+
+  .eventDesc {
+    display: none;
+  }
+
+  .event {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    /* justify-content: space-around; */
+    align-items: center;
+  }
+
+  .eventDate {
+    width: 30%;
+    margin: 1.5%;
+    text-align: center;
+  }
+
+  .eventName {
+    width: 30%;
+    max-width: 31%;
+    margin: 1.5%;
+    text-align: center;
+  }
+
+  .eventOp {
+    width: 30%;
+    margin: 1.5%;
+    text-align: center;
+  }
+
+  .fas.fa-trash-alt {
+    font-size: 20px;
+    margin: 16.5%;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+
+  .fas.fa-eye {
+    display: none;
+  }
+
+  .userName,
+  .userOp {
+    width: 50%;
+    margin: 1.5%;
+    text-align: center;
+  }
+
+  /*Añadir eventos*/
+  #addEvent,
+  #addUser {
+    display: flex;
+    width: 90%;
+    min-height: 140px;
+    margin-top: 5%;
+    border-radius: 5px;
+    flex-wrap: wrap;
+  }
+
+  #datePicker {
+    font-family: 'Helvetica', arial, sans-serif;
+    font-size: 12px;
+    width: 40%;
+    height: 40px;
+    margin: 5% 5% 0 5%;
+    padding: 5px;
+    color: #95a5a6;
+    background: none;
+    appearance: none;
+  }
+
+  #addEventName {
+    width: 40%;
+    height: 40px;
+    margin: 5% 5% 0 5%;
+  }
+
+  #addEventDescription {
+    width: 90%;
+    height: 15vw;
+    margin: 5%;
+  }
+
+  #addButton,
+  #btnAddUsu {
+    width: 90%;
+    height: 40px;
+    margin: 0 5% 5% 5%;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  #eventTitle {
+    display: none;
+  }
+
+  #eventDescription {
+    display: none;
+  }
+
+  .eventUs,
+  .eventUser {
+    display: none;
+  }
+
+  #boxForm {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #nm,
+  #pw {
+    width: 40%;
+    height: 40px;
+    margin: 5%;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    height: 100%;
+  }
+
+  article {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #eventInfo {
+    overflow: auto;
+    width: 100%;
+    height: 70%;
+    min-height: 135px;
+    margin: 2%;
+    border-radius: 5px;
+  }
+
+  #menu {
+    position: fixed;
+  }
+
+  #menu {
+    justify-content: space-between;
+  }
+
+  #uName {
+    padding-right: 20px;
+  }
+
+  #eventHistory {
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 45px;
+    border-radius: 5px 5px 0 0;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .eventDesc {
+    padding: 3%;
+  }
+
+  .event {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid lightgray;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .eventDate {
+    padding-left: 2%;
+  }
+
+  .eventName {
+    padding-right: 0;
+  }
+
+  /*Añadir eventos*/
+  #addEvent,
+  #addUser {
+    display: flex;
+    width: 90%;
+    height: -webkit-fill-available;
+    min-height: 140px;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    flex-wrap: wrap;
+  }
+
+  #datePicker {
+    font-family: 'Helvetica', arial, sans-serif;
+    font-size: 12px;
+    width: 40%;
+    height: 40px;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding: 5px;
+    color: #95a5a6;
+    border: 1px solid black;
+    background: none;
+    appearance: none;
+  }
+
+  #nm,
+  #pw {
+    width: 40%;
+    height: 40px;
+    margin: 5%;
+  }
+
+  #addButton,
+  #btnAddUsu {
+    width: 90%;
+    height: 40px;
+    margin: 0 5% 5% 5%;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  #addEventName {
+    width: 40%;
+    height: 40px;
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+
+  #addEventDescription {
+    width: 90%;
+    height: 10vh;
+    margin: 5%;
+    margin-bottom: 2%;
+  }
+
+  #addButton {
+    font-size: 16px;
+    width: 90%;
+    height: 40px;
+    margin: 1% 5% 5% 5%;
+  }
+
+  #addUser {
+    font-size: 16px;
+  }
+
+  #boxForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    margin: 2%;
+    align-items: center;
+  }
+
+  #eventDescription {
+    padding: 0 3%;
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #d3e8ff;
+  }
+
+  textarea {
+    padding: 5px;
+  }
+
+  #textDescription {
+    display: block;
+    width: 40vw;
+    height: 10vh;
+    margin-top: 4%;
+    margin-right: auto;
+    margin-bottom: 4%;
+    margin-left: auto;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  #menu #menuList {
+    display: flex;
+    flex-direction: row;
+    background-color: #304d6d;
+  }
+
+  #menu #menuList li {
+    line-height: 60px;
+    display: flex;
+    height: 100%;
+    padding: 0 22px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .event .eventName,
+  .event .eventUser,
+  .event button {
+    width: 18%;
+  }
+
+  .event .eventUser {
+    padding-left: 9%;
+  }
+
+  .event .eventName {
+    padding-left: 4%;
+  }
+
+  .event .fa-trash-alt {
+    padding-left: 2%;
+  }
+
+  .event .userName {
+    padding: 5%;
+  }
+
+  .event button {
+    font-size: 20px;
+    border: none;
+    background: none;
+  }
+
+  footer li a {
+    padding: 0 15px;
+    text-decoration: none;
+    color: white;
+  }
+
+  footer li a:hover {
+    text-decoration: underline;
+  }
+
+  /* HOVER MENU Y BOTONES*/
+  #addButton:hover,
+  #btnAddUsu:hover {
+    transition: .3s;
+    border-color: #007dff;
+    background-color: white;
+  }
+
+  .event:hover {
+    background-color: #a2b9c8;
+  }
+}

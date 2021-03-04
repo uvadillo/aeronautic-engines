@@ -1,0 +1,61 @@
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Es una página secundaria para registrar empleados y ver avios">
+	<link rel="shortcut icon" type="image/x-icon" href="../media/logo.png">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<title>Home</title>
+
+</head>
+<body onload="mostrarEventos()">
+	<header>
+		<nav id="menu">
+			<p id="uName"></p>
+			<img src="../media/Logo.png" alt="logo" class="logo">
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn open">
+				<i class="fas fa-bars"></i>
+			</label>
+			<label for="check" for="check" class="checkbtn close">
+				<i id="cerrar" class="fas fa-times"></i>
+			</label>
+			<ul id="menuList">
+				<li id="btnCal"><a class="active" href="#">Inicio</a></li>
+				<li id="btnUsu"><a href="#" >Usuarios</a></li>
+				<li><a href="../index.html">Cerrar sesion</a></li>
+			</ul>
+		</nav>
+	</header>
+	<article>
+		<div id="eventInfo">
+			<!--
+			 <div id="eventHistory">
+				<p class="eventDate">Fecha</p>
+				<p class="eventName">Evento</p>
+				<p class="eventDesc">Descripcion</p>
+			</div>-->
+		</div>
+		<div id="boxForm">
+			<div id="addEvent">
+				<input type="date" placeholder="si" name="date" id="datePicker">
+				<input type="text" name="eventName" id="addEventName" placeholder="Nombre">
+				<textarea name="descripcion" id="addEventDescription" placeholder="Añade una descripcion al evento"></textarea>
+				<input type="button" value="Añadir" id="addButton" onclick="addEvent()">
+			</div>
+		</div>
+		</div>
+	</article>
+	<footer>
+		<ul>
+			<li><a href="#" class="f1">Copyright &copy; 2020</a></li>
+			<li><a href="#" class="f2">Terminos</a></li>
+			<li><a href="#" class="f3">Legal</a></li>
+ 		</ul>
+	</footer>
+</body>
+<script src="../js/main.js"></script>
+<script src="../js/login.js"></script>
+</html>
