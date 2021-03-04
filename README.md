@@ -33,8 +33,12 @@ Las imágenes y textos de la página corporativa serán de ejemplo (es posible u
 texto Lorem Ipsum), pero tienen que simular un contenido real ya que será la primera versión
 que entreguemos a la empresa para su aprobación.
 
-## Construido con 🛠️
-
+## Herramientas 🛠️
+Desarrollo de la app:
 * [Visual Studio Code](https://code.visualstudio.com/) - La interfaz gráfica utilizada
 * [Wordpress](https://wordpress.com/es/) - Web principal
 * [File-zilla](https://filezilla-project.org/) - Para el servidor FTP
+
+Organizacion:
+* [Slack](https://slack.com/intl/es-es/)
+* [Trello](https://trello.com/es)
