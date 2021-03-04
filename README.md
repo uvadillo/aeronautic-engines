@@ -1,7 +1,7 @@
 # Aeronautic Engines
-
-![alt text](https://raw.githubusercontent.com/uvadillo/aeronautic-engines/main/media/logoCompleto.png)
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/uvadillo/aeronautic-engines/main/media/logoCompleto.png">
+</p>
 Este es el primer proyecto que realizamos en un grupo de 3, en el cual nos pedian una aplicacion web donde se pueden añadir y borrar avisos, en ellos se puede ver la descripción si asi lo desea el tecnico.
 Tambien se podian añadir trabajadores mediante Usuario y contraseña, puedes iniciar sesion con el usuario creado y borrar tu usuario, pero no puedes borrar el del administrador.
 
