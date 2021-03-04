@@ -8,7 +8,7 @@
 <p>Realizamos una pagina de Wordpress instalandolo en un servidor local, por lo que no esta disponible, .
   Tambien hay que destacar la aplicacion web es totalmente responsiva y que al ser el primer proyecto no hicimos uso de la base de datos, lo guardabamos en el LocalStorage mediante JavaScript.</p>
 
-# Enunciado del Reto 1
+# Reto 1 📋
 Somos una empresa de reciente creación dedicada a la prestación de todo tipo de
 servicios informáticos, como el desarrollo de aplicaciones web o diseño de páginas web en
 Wordpress.
